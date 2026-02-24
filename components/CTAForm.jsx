@@ -51,7 +51,7 @@ export default function CTAForm({ source = "accident-insurance" }) {
 
   if (isSuccess) {
     return (
-      <section id="cta-form" className="py-28 md:py-36 bg-[#0F0F0F]">
+      <section id="cta-form" className="py-28 md:py-36 bg-dark">
         <div className="max-w-md mx-auto px-6 text-center">
           <div className="bg-white rounded-2xl p-10 shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
             <div className="w-14 h-14 rounded-full bg-[#059669] mx-auto mb-6 flex items-center justify-center shadow-[0_4px_12px_rgba(5,150,105,0.3)]">
@@ -71,14 +71,14 @@ export default function CTAForm({ source = "accident-insurance" }) {
   }
 
   return (
-    <section id="cta-form" className="py-28 md:py-36 bg-[#0F0F0F]">
+    <section id="cta-form" className="py-28 md:py-36 bg-dark">
       <div className="max-w-md mx-auto px-6">
         <ScrollAnimation>
-          <div className="text-center mb-10">
+          <div className="text-center mb-14">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
               무료 상담 신청
             </h2>
-            <p className="text-[#888888] text-[15px]">
+            <p className="text-muted text-[15px]">
               강제 가입 없이, 내 상황에 맞는 보험료만 확인하세요
             </p>
           </div>
