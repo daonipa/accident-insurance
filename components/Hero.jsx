@@ -1,5 +1,4 @@
 "use client";
-import { Shield, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   const scrollToForm = () => {
@@ -7,41 +6,33 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero-gradient relative overflow-hidden">
-      <div className="max-w-4xl mx-auto px-6 py-28 md:py-36 lg:py-44 text-center relative z-10">
-        <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-line rounded-full px-4 py-2 mb-8">
-          <Shield className="w-4 h-4 text-primary" fill="currentColor" />
-          <span className="text-sm font-medium text-body">통합상해보험 무료 설계</span>
-        </div>
+    <section className="bg-[#0F0F0F] relative overflow-hidden">
+      <div className="max-w-3xl mx-auto px-6 py-32 md:py-40 lg:py-48 text-center">
+        <p className="text-sm tracking-[0.2em] uppercase text-[#999999] mb-8 font-medium">
+          통합상해보험
+        </p>
 
-        <h1 className="text-3xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-tight tracking-tight text-heading mb-6">
-          넘어지는 건 1초,
-          <br />
-          <span className="text-primary">치료비</span>는 1년치 월급.
+        <h1 className="text-[2rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-[1.2] tracking-tight text-white mb-8">
+          넘어지는 건 1초,<br />치료비는 1년치 월급.
         </h1>
 
-        <p className="text-lg md:text-xl text-body mb-4 leading-relaxed">
-          골절 한 번에 평균 치료비
-          <strong className="text-warning text-2xl md:text-3xl font-extrabold ml-2">800만원</strong>
+        <p className="text-lg md:text-xl text-[#999999] mb-3 font-light">
+          골절 한 번 평균 치료비
         </p>
-        <p className="text-base md:text-lg text-muted mb-10">
-          일상의 사고, 대비하고 계신가요?
+        <p className="text-4xl md:text-5xl font-bold text-white mb-12 tracking-tight">
+          800<span className="text-[#2563EB]">만원</span>
         </p>
 
         <button
           onClick={scrollToForm}
-          className="btn-pulse inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-lg px-10 py-4 rounded-2xl transition-all duration-300 cursor-pointer hover:scale-105 active:scale-95"
+          className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold text-base px-10 py-4 rounded-full transition-all duration-300 cursor-pointer"
         >
           무료 보장 진단 받기
         </button>
 
-        <p className="text-sm text-muted mt-4">
-          무료 상담 · 강제 가입 없음 · 30초 소요
+        <p className="text-sm text-[#666666] mt-6">
+          강제 가입 없음 · 30초 소요
         </p>
-
-        <div className="mt-10 float-animation">
-          <ArrowDown className="w-6 h-6 text-muted mx-auto" />
-        </div>
       </div>
     </section>
   );
