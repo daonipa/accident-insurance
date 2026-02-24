@@ -10,7 +10,7 @@ const CALL_TIMES = [
   "시간 무관",
 ];
 
-export default function CTAForm({ source = "homecare-insurance" }) {
+export default function CTAForm({ source = "accident-insurance" }) {
   const [form, setForm] = useState({ name: "", phone: "", callTime: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
