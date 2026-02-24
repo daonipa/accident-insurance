@@ -17,16 +17,18 @@ export default function Solution() {
     <section className="py-24 md:py-32 bg-surface">
       <div className="max-w-4xl mx-auto px-6">
         <ScrollAnimation>
-          <p className="text-sm tracking-[0.15em] uppercase text-muted mb-4 font-medium">Solution</p>
-          <h2 className="text-2xl md:text-[2.5rem] font-bold text-heading leading-tight mb-6">
-            통합상해보험이<br />해결합니다.
-          </h2>
-          <p className="text-body text-[15px] leading-relaxed mb-12 max-w-xl">
-            교통사고부터 일상 사고까지. 치료비는 물론 소득 중단에 대한 일당 보장까지 하나의 보험으로 모두 해결합니다.
-          </p>
+          <div className="text-center mb-14">
+            <p className="text-sm tracking-[0.15em] uppercase text-muted mb-4 font-medium">Solution</p>
+            <h2 className="text-2xl md:text-[2.5rem] font-bold text-heading leading-tight mb-5">
+              통합상해보험이 해결합니다.
+            </h2>
+            <p className="text-body text-[15px] leading-relaxed max-w-xl mx-auto">
+              교통사고부터 일상 사고까지. 치료비는 물론 소득 중단에 대한 일당 보장까지 하나의 보험으로 모두 해결합니다.
+            </p>
+          </div>
         </ScrollAnimation>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4 mb-12">
           {features.map((item, i) => (
             <ScrollAnimation key={i} delay={i * 80}>
               <div className="bg-white rounded-2xl p-6 border border-line hover:border-[#CCCCCC] transition-colors duration-300">
@@ -38,7 +40,7 @@ export default function Solution() {
         </div>
 
         <ScrollAnimation delay={400}>
-          <div className="mt-12">
+          <div className="text-center">
             <button
               onClick={scrollToForm}
               className="bg-heading hover:bg-black text-white font-semibold px-8 py-3.5 rounded-full transition-colors duration-300 cursor-pointer text-[15px]"
