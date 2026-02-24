@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
 
+/** 통합상해보험 랜딩페이지 */
 export default function Home() {
   return (
     <main className="overflow-x-hidden pb-20 md:pb-0">
